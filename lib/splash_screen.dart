@@ -1,7 +1,7 @@
 import 'package:chiluka_useer/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-
+import 'package:chiluka_useer/signup_screen.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -61,16 +61,17 @@ class _SplashScreenState extends State<SplashScreen>
     );
 
     // Navigate to home page
-    Navigator.of(context).pushReplacement(
-      PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) =>
-            const MyHomePage(title: 'Flutter Demo Home Page'),
-        transitionsBuilder: (context, animation, secondaryAnimation, child) {
-          return FadeTransition(opacity: animation, child: child);
-        },
-        transitionDuration: const Duration(milliseconds: 500),
-      ),
-    );
+  // Instead of navigating to MyHomePage, navigate to LoginScreen
+Navigator.of(context).pushReplacement(
+  PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) =>
+        const LoginScreen(), // Changed to LoginScreen
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return FadeTransition(opacity: animation, child: child);
+    },
+    transitionDuration: const Duration(milliseconds: 500),
+  ),
+);
   }
 
   @override

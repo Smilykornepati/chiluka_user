@@ -61,6 +61,7 @@ flutter:
   assets:
     - assets/Chiluka.png
     - assets/Chiluka-removebg-preview.png
+    - assets/image.png
   #    - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
