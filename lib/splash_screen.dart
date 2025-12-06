@@ -123,15 +123,12 @@ Navigator.of(context).pushReplacement(
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(20),
                           child: Image.asset(
-                            'assets/Chiluka-removebg-preview.png',
+                            'assets/chilukalogo.png',
                             fit: BoxFit.contain,
                           ),
                         ),
                       ),
                       const SizedBox(height: 40),
-                      
-                      
-                  
                     ],
                   ),
                 ),

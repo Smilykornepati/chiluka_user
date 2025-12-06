@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:chiluka_useer/home_screen.dart';
 import 'package:chiluka_useer/history_screen.dart';
 import 'package:chiluka_useer/uploads_screen.dart';
+import 'package:chiluka_useer/profile_screen.dart';
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -17,7 +18,7 @@ class _MainScreenState extends State<MainScreen> {
     const HomeScreen(),
     const HistoryScreen(),
     const UploadsScreen(),
-    const ProfileTab(),
+    const ProfileScreen(),
   ];
 
   @override
@@ -57,7 +58,7 @@ class _MainScreenState extends State<MainScreen> {
                 _buildNavItem(
                   icon: Icons.cloud_upload_outlined,
                   selectedIcon: Icons.cloud_upload_rounded,
-                  label: 'Uploads',
+                  label: 'Files',
                   index: 2,
                 ),
                 _buildNavItem(
